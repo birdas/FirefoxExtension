@@ -1,0 +1,30 @@
+{
+
+    "manifest_version": 2,
+    "name": "Test extension",
+    "version": "1.0",
+  
+    "description": "Used for testing how extensions work",
+  
+    "content_scripts": [
+        {
+            "matches": [ "call_urls>" ],
+            "js": ["/content_scripts.js" ]
+        }
+    ],
+
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "48": "/icon.svg"
+        },
+        "default_title": "Test Extensions",
+        "default_popup": "/popup.html"
+    },
+
+    "permissions": [
+        "storage"
+    ]
+
+  }
+  
